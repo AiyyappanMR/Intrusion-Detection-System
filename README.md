@@ -7,8 +7,6 @@
 - [Data Collection and Preprocessing](#data-collection-and-preprocessing)
 - [Modeling Approach](#modeling-approach)
 - [Usage](#usage)
-- [Results](#results)
-- [Contributors](#contributors)
 - [References](#references)
 
 ---
@@ -74,12 +72,39 @@ This project focuses on enhancing the detection of malicious DGAs in real-time n
 ---
 
 ## Usage
-### Requirements:
-- Python 3.x
-- Required Libraries: `numpy`, `pandas`, `scikit-learn`, `scapy`, `joblib`
 
-### Steps:
-1. Clone this repository:
+### Requirements
+Ensure you have the following installed on your system:
+- Python 3.x
+- Libraries: `numpy`, `pandas`, `scikit-learn`, `scapy`, `joblib`
+
+### Steps to Run
+1. **Clone the Repository**:
    ```bash
    git clone https://github.com/AiyyappanMR/Intrusion-Detection-System.git
    cd Intrusion-Detection-System
+   ```
+
+2. **Train the Model**:
+   Train the Random Forest classifier using the prepared dataset:
+   ```bash
+   python train_model.py
+   ```
+
+3. **Run Real-Time DNS Detection**:
+   Use the trained model to classify DNS queries from real-time network traffic:
+   ```bash
+   python dns_sniffer.py
+   ```
+
+---
+
+
+## References
+
+1. MargaretRouse. *Malware Definition by SearchSecurity*. Retrieved from [TechTarget](https://searchsecurity.techtarget.com/definition/malware).
+2. P. Mohan Ananda, T. K. "An Ensemble Approach For Algorithmically Generated Domain Names."
+3. Jose, R.-O. "Detection of Algorithmically Generated Malicious Domain Names Using Masked Features."
+4. Born, K. and Pereira, M. "Character Frequency Analysis for DNS Tunnel Detection."
+
+---
