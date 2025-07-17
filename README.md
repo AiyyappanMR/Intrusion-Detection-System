@@ -15,7 +15,6 @@
 Intrusion Detection System (IDS) is a machine learning-based solution to combat cybersecurity threats posed by **Domain Generation Algorithms (DGAs)**. DGAs are widely used by malware to generate domain names, enabling communication with command and control servers. 
 
 This project focuses on enhancing the detection of malicious DGAs in real-time network traffic by analyzing **48 features** derived from domain names, including lexical and statistical attributes such as entropy, pronounceability, and character frequencies.
-
 ---
 
 ## Features
